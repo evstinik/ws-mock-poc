@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "target": "es5",
+    "lib": ["es5", "dom"],
+    "types": ["cypress"],
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strictNullChecks": false,
+    "noEmit": true,
+    "baseUrl": "cypress",
+    "paths": {
+      "@fixtures/*": ["fixtures/*"],
+      "@support/*": ["support/*"]
+    }
+    // be explicit about types included
+    // to avoid clashing with Jest types
+  },
+  "include": ["cypress/**/*.ts", "cypress/**/*.cy.ts", "cypress.config.ts"]
+}
