@@ -22,10 +22,11 @@
     "@typescript-eslint/parser": "^7.15.0",
     "@vitejs/plugin-react": "^4.3.1",
     "cypress": "12.17.2",
-    "cypress-mock-websocket-plugin": "^2.0.0",
     "eslint": "^8.57.0",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",
+    "mock-socket": "^9.3.1",
+    "ts-pattern": "^5.2.0",
     "typescript": "^5.2.2",
     "vite": "^5.3.4"
   }

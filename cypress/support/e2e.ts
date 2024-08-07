@@ -18,4 +18,11 @@ import "./commands";
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
-import "cypress-mock-websocket-plugin";
+import "./plugins/mock-websocket";
+
+beforeEach(() => {
+  cy.mockWebSocket().registerSocketRequestResponse(
+    { action: "ping" },
+    { action: "pong" }
+  );
+});
